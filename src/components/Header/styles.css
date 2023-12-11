@@ -1,0 +1,134 @@
+/* styles.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: white;
+  color: #6a6767;
+}
+
+.homeLink {
+  margin-right: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.businessName {
+  font-size: 1.5rem;
+}
+
+.searchBar {
+  position: relative;
+  width: 80%;
+
+  background-color: #f8f8f8;
+  border-radius: 30px;
+  padding: 2px 40px;
+}
+
+.searchBar input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.searchIcon {
+  cursor: pointer;
+  position: absolute;
+  color: #6a6767;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+
+.navLinks {
+  display: flex;
+  margin-left: 15px;
+}
+
+.navLinks a {
+  margin-right: 20px;
+  color: #6a6767;
+  text-decoration: none;
+}
+
+.navLinks a:hover {
+  color: #010101;
+}
+
+.accountIcon {
+  cursor: pointer;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 1.4em;
+}
+
+.accountIcon:hover {
+  color: #010101;
+}
+
+.toggleButton {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: flex;
+    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .accountIcon {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .navLinks a {
+    margin-left: 20px;
+  }
+}
+
+/* @media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .searchBar input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .searchBar {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .accountIcon {
+    width: 35%;
+    justify-content: flex-end;
+  }
+} */
